@@ -1,0 +1,25 @@
+body {
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenido {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(212, 133, 14);
+    font-weight: 100;
+    text-align: center;
+}
+
+td {
+    border: 1px solid hsl(44, 93%, 47%);
+    padding: 50px;
+    margin: 10px;
+}
