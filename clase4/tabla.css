@@ -1,3 +1,20 @@
+@media print {
+    .contenido {
+        width: 80%;
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        color: black;
+    }
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: gray;
     margin: 0;
@@ -14,6 +31,7 @@ body {
 
 h1 {
     color: rgb(212, 133, 14);
+    font-size: 3rem;
     font-weight: 100;
     text-align: center;
 }
@@ -42,4 +60,37 @@ ol {
 li {
     border: 1px solid black;
     padding: 20px;
+}
+
+div {
+  background-color: rgb(1, 249, 125);
+  animation-name: myAnimation;
+  animation-duration: 6s;
+}
+
+@keyframes myAnimation {
+  from {background-color: rgb(1, 249, 125);}
+  to {background-color: rgb(15, 15, 8);}
+}
+
+td {
+  background-color: rgb(84, 1, 249);
+  animation-name: myAnimation2;
+  animation-duration: 8s;
+}
+
+@keyframes myAnimation2 {
+  from {background-color: rgb(84, 1, 249);}
+  to {background-color: rgb(78, 78, 36);}
+}
+
+li {
+  background-color: rgb(231, 90, 3);
+  animation-name: myAnimation3;
+  animation-duration: 10s;
+}
+
+@keyframes myAnimation3 {
+  from {background-color: rgb(231, 90, 3);}
+  to {background-color: rgb(21, 116, 157);}
 }
