@@ -1,0 +1,53 @@
+:root {
+    --principal: #3498db;
+    --secundario: #2ecc71;
+    --fondo: #f5f5f5;
+    --texto: #333333;
+}
+
+@font-face {
+    font-family: Mifuente;
+    src: url('caveat.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    font-size: 16px;    
+}
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: Mifuente;
+    margin: 0;
+    padding: 0px;
+}
+
+.cuerpo {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul span {
+    font-weight: bold;
+    color: var(--principal);
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('debian.png');
+    background-size: contain;
+    margin-right: 10px;
+}
