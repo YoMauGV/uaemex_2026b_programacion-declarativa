@@ -1,0 +1,54 @@
+:root {
+    --primario: #0056b3;
+    --fondo: #f4f4f9;
+    --texto: #333333;
+    --borde: #dddddd;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    padding: 20px;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: var(--primario);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #004494;
+}
+
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid var(--borde);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+    color: var(--primario);
+}
